@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -36,7 +38,6 @@ Rails.application.configure do
 
   host = '0ebe1dc6d40e4a4bb06e0ca7fe138127.vfs.cloud9.us-east-2.amazonaws.com'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
-
 
   config.action_mailer.perform_caching = false
 
