@@ -1,4 +1,4 @@
-require 'capistrano/rails'
+# require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
 require 'capistrano/git-submodule-strategy'
