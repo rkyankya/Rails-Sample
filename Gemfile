@@ -12,16 +12,17 @@ gem 'faker',                      '2.11.0'
 gem 'image_processing',           '1.9.3'
 gem 'jbuilder',                   '2.10.0'
 gem 'mini_magick',                '4.9.5'
-gem 'puma',                       '4.3.5'
-gem 'rails',                      '6.0.3.1'
-gem 'sass-rails',                 '6.0.0'
-gem 'turbolinks',                 '5.2.1'
-gem 'webpacker',                  '4.2.2'
-gem 'will_paginate',              '3.3.0'
+gem 'pg'
+gem 'puma', '4.3.5'
+gem 'rails', '6.0.3.1'
+gem 'sass-rails', '6.0.0'
+gem 'turbolinks', '5.2.1'
+gem 'webpacker', '4.2.2'
+gem 'will_paginate', '3.3.0'
 
 group :development, :test do
-  gem 'byebug',  '11.1.3', platforms: %i[mri mingw x64_mingw]
-  gem 'sqlite3', '1.4.2'
+  gem 'byebug', '11.1.3', platforms: %i[mri mingw x64_mingw]
+  gem 'sqlite3'
 end
 
 group :development do
@@ -43,14 +44,13 @@ group :test do
 end
 
 group :production do
-  gem 'aws-sdk-s3', '1.46.0', require: false
-  gem 'pg',         '1.2.3'
+  gem 'aws-sdk-s3', require: false
 end
 
-# Deploy to digital Ocean 
+# Deploy to digital Ocean
 gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
