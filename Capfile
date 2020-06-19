@@ -1,6 +1,7 @@
 require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
+require 'capistrano/git-submodule-strategy'
 
 set :rbenv_type, :user
 set :rbenv_ruby, '2.7.1'
